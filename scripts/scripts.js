@@ -1,3 +1,3 @@
-bot.hear(/Hello!/, function(res) {
+robot.hear(/Hello!/, function(res) {
   return res.send("Hi there!");
 });
