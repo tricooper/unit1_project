@@ -6,6 +6,15 @@ module.exports = function(robot) {
 		return res.send("I'm a robot -- I don't eat food!");
 	});   
 
+ 	robot.respond(/Hi Hubot! My name is (.*)/i, function(msg){
+ 		var name;
+ 		name == msg.match[1];
+ 		if (name === 'Hubot') {
+ 			return msg.send('youre not Hubot! Thats me!');
+ 		} else {
+ 			return msg.send ('Hello ' + name + ' nice to meet you!');
+ 		}
+ 	});
 }
 
 
