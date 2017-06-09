@@ -9,10 +9,10 @@ module.exports = function(robot) {
  	robot.respond(/Hi Hubot! My name is (.*)/i, function(msg){
  		var name;
  		name == msg.match[1];
- 		if (name === 'Hubot') {
+ 		if (name == 'Hubot') {
  			return msg.send('youre not Hubot! Thats me!');
  		} else {
- 			return msg.send ('Hello ' + name + ' nice to meet you!');
+ 			return msg.reply ('Hello ' + name + ' nice to meet you!');
  		}
  	});
 }
