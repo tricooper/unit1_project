@@ -17,10 +17,16 @@ module.exports = function(robot) {
  		}
  	});
 
- 	robot.hear(/what year is it?/i, function(res) {
+ 	robot.hear(/year/i, function(res) {
  		var d = new Date();
 		var year = d.getFullYear();
  		return res.reply('the year is: ' + year);
+ 	});
+
+ 	 	robot.hear(/day/i, function(res) {
+ 		var d = new Date();
+		var year = d.getDay();
+ 		return res.reply('the day is: ' + year);
  	});
 }
 
