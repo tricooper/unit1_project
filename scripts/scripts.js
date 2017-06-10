@@ -50,6 +50,10 @@ module.exports = function(robot) {
  				break; 			
 
  		}
+
+ 		robot.respond(/tell john/i, function(res){
+ 			return robot.messageRoom ("tcooper", "hello, John. My name is Hal");
+ 		})
  	});
 
 }
