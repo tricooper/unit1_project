@@ -56,7 +56,7 @@ module.exports = function(robot) {
  	  	robot.respond(/tell me/i, function(res){
  	  		var room;
  	  		room = "slackbot-test";
- 			return res.messageRoom room, ("hello. My name is Hal");
+ 			return res.messageRoom (room, "hello. My name is Hal");
  		});
 
 //create an array to hold a list of tasks
