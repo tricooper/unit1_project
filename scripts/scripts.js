@@ -54,22 +54,24 @@ module.exports = function(robot) {
  	});
  	  	
  	  	robot.respond(/tell me/i, function(res){
+ 	  		var room;
+ 	  		room = "slackbot-test";
  			return res.messageRoom slackbot-test, "hello. My name is Hal";
  		});
 
 //create an array to hold a list of tasks
 //on user input add to the array
-		robot.respond(/add (.*)/i, function(res){
-			var task;
-			var toDo = [];
-			task = res.match[1];
-			toDo.push(task);
-			return res.reply ("I've added " + task + " to your to do list");
-			for (var i = 0; i < toDo.length; i++) {
-			return res.reply('Here is your list' + i + ':' + 'toDo[i]' );
-			}
+		// robot.respond(/add (.*)/i, function(res){
+		// 	var task;
+		// 	var toDo = [];
+		// 	task = res.match[1];
+		// 	toDo.push(task);
+		// 	return res.reply ("I've added " + task + " to your to do list");
+		// 	for (var i = 0; i < toDo.length; i++) {
+		// 	return res.reply('Here is your list' + i + ':' + 'toDo[i]' );
+		// 	}
 
-		});
+		// });
 //print the array using a for loop to show when you'd like to get this done
 
 // mark as completed and remove from array
