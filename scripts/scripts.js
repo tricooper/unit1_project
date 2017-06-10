@@ -58,7 +58,7 @@ module.exports = function(robot) {
  		});
 
 //create an array to hold a list of tasks
-var toDo = [];
+var toDo = [hello];
 //on user input add to the array
 		robot.respond(/add (.*)/i, function(res){
 			var task;
