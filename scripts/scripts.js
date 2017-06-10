@@ -2,7 +2,7 @@ module.exports = function(robot) {
     robot.hear(/Hello!/i, function(res) {
       return res.send("Hi there!");
     });
- 	robot.respond(/favorite food?/i, function(res) {
+ 	robot.respond(/favorite food/i, function(res) {
 		return res.send("I'm a robot -- I don't eat food!");
 	});   
 
