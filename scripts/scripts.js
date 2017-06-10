@@ -58,20 +58,20 @@ module.exports = function(robot) {
  		});
 
 //create an array to hold a list of tasks
-var toDo = [hello];
 //on user input add to the array
 		robot.respond(/add (.*)/i, function(res){
 			var task;
+			var toDo = [];
 			task = res.match[1];
 			toDo.push(task);
 			return res.reply ("I've added " + task + " to your to do list");
+			for (var i = 0; i < toDo.length; i++) {
+			return res.reply('Here is your list' + i + ':' + 'toDo[i]' );
+			}
+
 		});
 //print the array using a for loop to show when you'd like to get this done
-		robot.respond(/todo/i, function(res){
-			for (var i = 0; i < toDo.length; i++) {
-				return res.reply('Here is your list' + i + ':' + 'toDo[i]' );
-			}
-		});
+
 // mark as completed and remove from array
 }
 
