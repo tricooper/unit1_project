@@ -2,6 +2,7 @@ module.exports = function(robot) {
     robot.hear(/Hello!/i, function(res) {
       return res.send("Hi there!");
     });
+
  	robot.hear(/favorite food/i, function(res) {
 		return res.send("I'm a robot -- I don't eat food!");
 	});   
@@ -14,6 +15,12 @@ module.exports = function(robot) {
  		} else {
  			return msg.reply ('Hello ' + name + ' nice to meet you!');
  		}
+ 	});
+
+ 	robot.hear(/what year is it?/i, function(res) {
+ 		var d = new Date();
+		var year = d.getFullYear();
+ 		return res.reply('the year is: ' + year);
  	});
 }
 
