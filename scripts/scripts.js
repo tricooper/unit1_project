@@ -25,8 +25,28 @@ module.exports = function(robot) {
 
  	 	robot.hear(/day/i, function(res) {
  		var d = new Date();
-		var year = d.getDay();
- 		return res.reply('the day is: ' + year);
+		var day = d.getDay();
+ 		switch (year) {
+ 			case 0:
+ 				return res.reply('the day is: Sunday');
+ 				break;
+ 			case 1:
+ 				return res.reply('the day is: Monday');
+ 				break;
+ 			case 2:
+ 				return res.reply('the day is: Tuesday');
+ 				break;
+ 			case 3:
+ 				return res.reply('the day is: Wednesday');
+ 				break;
+ 			case 4:
+ 				return res.reply('the day is: Thursday');
+ 				break;
+ 			case 5:
+ 				return res.reply('the day is: Friday');
+ 				break;
+
+ 		}
  	});
 }
 
