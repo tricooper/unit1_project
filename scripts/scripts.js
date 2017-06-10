@@ -28,22 +28,22 @@ module.exports = function(robot) {
 		var day = d.getDay();
  		switch (day) {
  			case 0:
- 				return res.reply('the day is: Sunday');
+ 				return res.reply('the day is: Sunday "sunglasses:');
  				break;
  			case 1:
- 				return res.reply('the day is: Monday');
+ 				return res.reply('the day is: Monday. :sleeping:');
  				break;
  			case 2:
  				return res.reply('the day is: Tuesday');
  				break;
  			case 3:
- 				return res.reply('the day is: Wednesday');
+ 				return res.reply('the day is: Wednesday. :camel:');
  				break;
  			case 4:
  				return res.reply('the day is: Thursday');
  				break;
  			case 5:
- 				return res.reply('the day is: Friday');
+ 				return res.reply('the day is: Friday :beers:');
  				break;
  			case 6:
  				return res.reply('the day is: Saturday');
@@ -51,6 +51,7 @@ module.exports = function(robot) {
 
  		}
  	});
+
 }
 
 
