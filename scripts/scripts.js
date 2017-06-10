@@ -68,7 +68,9 @@ var toDo = [];
 		});
 //print the array using a for loop to show when you'd like to get this done
 		robot.respond(/todo/i, function (res){
-			return res.reply(toDo);
+			for (var i = 0; i < toDo.length; i++) {
+				res.reply('Here is your list' + [i] + ':' + 'toDo[i]' );
+			}
 		});
 // mark as completed and remove from array
 }
