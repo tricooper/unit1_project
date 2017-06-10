@@ -51,10 +51,11 @@ module.exports = function(robot) {
 
  		}
 
- 		robot.respond(/tell john/i, function(res){
- 			return robot.messageRoom ("tcooper", "hello, John. My name is Hal");
- 		})
  	});
+ 	  	
+ 	  	robot.respond(/tell me/i, function(res){
+ 			return robot.messageRoom "tcooper", "hello, John. My name is Hal";
+ 		});
 
 }
 
