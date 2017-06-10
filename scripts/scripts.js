@@ -56,7 +56,7 @@ module.exports = function(robot) {
  	  	robot.respond(/tell me/i, function(res){
  	  		var room;
  	  		room = "#slackbot-test";
- 			return res.send room: 'slackbot-test', "This is a 'spontaneous' message"
+ 			return res.send (room: 'slackbot-test', "This is a 'spontaneous' message");
  		});
 
 //create an array to hold a list of tasks
