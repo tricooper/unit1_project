@@ -54,7 +54,7 @@ module.exports = function(robot) {
  	});
  	  	
  	  	robot.respond(/tell me/i, function(res){
- 			return robot.messageRoom "tcooper", "hello, John. My name is Hal";
+ 			return robot.messageRoom "#slackbot-test", "hello. My name is Hal";
  		});
 
 }
