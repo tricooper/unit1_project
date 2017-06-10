@@ -26,7 +26,7 @@ module.exports = function(robot) {
  	 	robot.hear(/day/i, function(res) {
  		var d = new Date();
 		var day = d.getDay();
- 		switch (year) {
+ 		switch (day) {
  			case 0:
  				return res.reply('the day is: Sunday');
  				break;
