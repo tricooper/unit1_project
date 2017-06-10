@@ -46,7 +46,7 @@ module.exports = function(robot) {
  				return res.reply('the day is: Friday :beers:');
  				break;
  			case 6:
- 				return res.reply('the day is: Saturday');
+ 				return res.reply('the day is: Saturday :golfer:');
  				break; 			
 
  		}
