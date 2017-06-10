@@ -64,12 +64,12 @@ var toDo = [];
 			var task;
 			task = res.match[1];
 			toDo.push(task);
-			return res.reply ("I've added" + task +"to you're Todo list");
+			return res.reply ("I've added " + task + " to your to do list");
 		});
 //print the array using a for loop to show when you'd like to get this done
-		robot.respond(/todo/i, function (res){
+		robot.respond(/todo/i, function(res){
 			for (var i = 0; i < toDo.length; i++) {
-				return res.reply('Here is your list' + [i] + ':' + 'toDo[i]' );
+				return res.reply('Here is your list' + i + ':' + 'toDo[i]' );
 			}
 		});
 // mark as completed and remove from array
