@@ -45,6 +45,9 @@ module.exports = function(robot) {
  			case 5:
  				return res.reply('the day is: Friday');
  				break;
+ 			case 6:
+ 				return res.reply('the day is: Saturday');
+ 				break; 			
 
  		}
  	});
