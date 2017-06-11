@@ -23,7 +23,7 @@ module.exports = function(robot) {
  		return res.reply('the year is: ' + year);
  	});
 
- 	 	robot.respond(/day/i, function(res) {
+ 	 	robot.respond(/.*day.*/i, function(res) {
  		var d = new Date();
 		var day = d.getDay();
  		switch (day) {
@@ -52,6 +52,11 @@ module.exports = function(robot) {
  		}
 
  	});
+
+ 	 // How Many weeks until blank (Hubot tells you)
+ 	 // tell me our class syllabus
+ 	 // what is our zoom link?
+ 	 // define x. (defines a certain piece of javascript)
  	  	
  	 //  	robot.respond(/tell me/i, function(res){
  	 //  		var room;
