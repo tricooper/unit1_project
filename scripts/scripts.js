@@ -53,11 +53,17 @@ module.exports = function(robot) {
 
  	});
  	  	
- 	  	robot.respond(/tell me/i, function(res){
- 	  		var room;
- 	  		room = "#slackbot-test";
- 			return res.send (room: 'slackbot-test', "This is a 'spontaneous' message");
- 		});
+ 	 //  	robot.respond(/tell me/i, function(res){
+ 	 //  		var room;
+ 	 //  		room = "#slackbot-test";
+ 		// 	return res.send (room: 'slackbot-test', "This is a 'spontaneous' message");
+ 		// });
+
+ // give someone props with motivational quote
+ // give someone encouragement 
+
+ // Boston Celtics Bot: what year's did this team win the championship? if they have won console.log the year that they won
+ // if you type the celtics, show the years and a KG meme
 
 //create an array to hold a list of tasks
 //on user input add to the array
