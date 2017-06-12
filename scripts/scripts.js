@@ -79,7 +79,7 @@ module.exports = function(robot) {
  	 		if ((day == 0)| (day == 6)) {
  	 			return res.reply ('Its the weekend...go home, nerd.');
  	 		} else if ((hour < 17) & (hour > 8)) {
- 	 			return res.reply ('You can go home in ' + hoursLeft + ' hours' + minutesLeft);
+ 	 			return res.reply ('You can go home in ' + hoursLeft + ' hours and' + minutesLeft + 'minutes');
  	 		} else if (hour < 8) {
  	 			return res.reply ("Dude, you're not even at work yet");
  	 		}
