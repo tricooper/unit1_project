@@ -73,12 +73,13 @@ module.exports = function(robot) {
 		 		var d = new Date();
 				var day = d.getDay();
 				var minute = d.getMinutes();
+				var minutesLeft = 60 - minute; 
 				var hour = d.getHours();
 				var hoursLeft = 17 - hour; 
  	 		if ((day == 0)| (day == 6)) {
  	 			return res.reply ('Its the weekend...go home, nerd.');
  	 		} else if ((hour < 17) & (hour > 8)) {
- 	 			return res.reply ('You can go home in ' + hoursLeft + 'hours');
+ 	 			return res.reply ('You can go home in ' + hoursLeft + 'hours and ' + minutesleft);
  	 		} else if (hour < 8) {
  	 			return res.reply ("Dude, you're not even at work yet");
  	 		}
