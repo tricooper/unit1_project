@@ -17,7 +17,7 @@ module.exports = function(robot) {
  		}
  	});
 
- 	robot.respond(/year/i, function(res) {
+ 	robot.respond(/.*year.*/i, function(res) {
  		var d = new Date();
 		var year = d.getFullYear();
  		return res.reply('the year is: ' + year);
@@ -54,6 +54,16 @@ module.exports = function(robot) {
  	});
 
  	 // How Many weeks until blank (Hubot tells you)
+
+ 	 	robot.respond(/.*can I go home.*/i, function(res) {
+		 	 	var d = new Date();
+				var day = d.getDay();
+				var timeOfDay = new Date(); 
+				var minute = timeOfDay.getMinutes();
+ 	 		if ((day === 6)| (day === 0) ){
+ 	 			return res.reply ('Today is the Weekend...go home, nerd.')
+ 	 		}
+ 	 	});
  	 // tell me our class syllabus
  	 // what is our zoom link?
  	 // define x. (defines a certain piece of javascript)
