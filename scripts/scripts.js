@@ -56,11 +56,11 @@ module.exports = function(robot) {
  	 // How Many weeks until blank (Hubot tells you)
 
  	 	robot.respond(/.*can I go home.*/i, function(res) {
-		 	 	var d = new Date();
+		 		var d = new Date();
 				var day = d.getDay();
 				var timeOfDay = new Date(); 
 				var minute = timeOfDay.getMinutes();
- 	 		if (day == 0) {
+ 	 		if (day === 0) {
  	 			return res.reply ('Today is the weekend...go home, nerd.');
  	 		} else {
  	 			return res.reply (day);
