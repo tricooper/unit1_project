@@ -20,7 +20,7 @@ module.exports = function(robot) {
  	robot.respond(/time/,i function(res) {
  		var d = new Date(); 
  		var currentTime = d.getHours();
- 		res.reply('the date is' + d);
+ 		res.reply('the date is' + currentTime);
 
  	});
 
