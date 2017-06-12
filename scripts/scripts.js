@@ -88,17 +88,18 @@ module.exports = function(robot) {
 
  	 // tell me our class syllabus
 
- 	 robot.respond(/.*syllabus.*/i, function(res) {
- 	 		var syllabus = {
+ 	 // robot.respond(/.*syllabus.*/i, function(res) {
+ 	 // 		var syllabus = {
 
- 	 		}
+ 	 // 		}
 
- 	 });
+ 	 // });
  	 // what are we doing in class today?
  	 // use settimeout to delay the response
  	 // what is our zoom link?
  	 robot.respond(/.*zoom link.*/.i, function(res){
- 	 	return res.reply ('https://generalassembly.zoom.us/j/708480118');
+ 	 	var zoom = 'https://generalassembly.zoom.us/j/708480118';
+ 	 	return res.reply (zoom);
 
  	 });
  	 // define x. (defines a certain piece of javascript)
