@@ -14,7 +14,7 @@ module.exports = function(robot) {
 		return res.send("I'm a robot -- I don't eat food!");
 	});   
 
- 	robot.respond(/.*My name is .* (.*)/i, function(msg){
+ 	robot.respond(/Hi Hubot! My name is (.*)/i, function(msg){
  		var name;
  		name = msg.match[1];
  		if (name == 'Hubot') {
@@ -183,6 +183,9 @@ for (var i in nbaChampions) {
     if (championTest.test(nbaChampions[i])){
       text += i + ', '; 
   }
+}
+if (res.match[1] === 'Boston Celtics'); {
+	text += 'http://gph.is/2cBfGHG';
 }
 return res.reply (text);
 
