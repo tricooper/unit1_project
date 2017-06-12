@@ -63,7 +63,7 @@ module.exports = function(robot) {
  	 		if (day == 0) {
  	 			return res.reply ('Today is the weekend...go home, nerd.');
  	 		} else {
- 	 			return res.reply ('test.');
+ 	 			return res.reply (day);
  	 		}
  	 	});
  	 // tell me our class syllabus
