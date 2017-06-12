@@ -17,7 +17,7 @@ Here's some of what he does:
 
 6. If you type in a string to Hal with 'Zoom link', Hal will return you the class Zoom link.
 
-7. If you type in the string "NBA Champion + 'Team Name'" where Team Name is a name of a current NBA team, Hal will tell you which year that team won the NBA championship. This is done by creating an object called 'nbaChampions' that contains the year: team and looping through the inputted team to see if they won that year. If they have won, Hal adds their name to the 'text' variable and returns this variable at the end. 
+7. If you type in the string "NBA Champion + 'Team Name'" (ex: NBA Champion Celtics) where Team Name is a name of a current NBA team, Hal will tell you which year that team won the NBA championship. This is done by creating an object called 'nbaChampions' that contains the year: team and looping through the inputted team to see if they won that year. If they have won, Hal adds their name to the 'text' variable and returns this variable at the end. 
 
 
 Roadblocks: 
