@@ -1,6 +1,13 @@
 module.exports = function(robot) {
     robot.respond(/Hello!/i, function(res) {
-      return res.send("Hi there!");
+    var hour = new Date().getHours();
+    if (hour > 17) {
+      return res.send("Good Evening!");
+    } else if (hour > 12) {
+    	return res.send ("Good Afternoon!");
+    } else {
+    	return res.send ('Good Morning!');
+    }
     });
 
  	robot.respond(/favorite food/i, function(res) {
@@ -76,7 +83,10 @@ module.exports = function(robot) {
  	 			return res.reply ("Dude, you're not even at work yet");
  	 		}
  	 	});
+
+
  	 // tell me our class syllabus
+ 	 // use settimeout to delay the response
  	 // what is our zoom link?
  	 // define x. (defines a certain piece of javascript)
  	  	
