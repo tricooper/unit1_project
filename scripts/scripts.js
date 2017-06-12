@@ -17,6 +17,13 @@ module.exports = function(robot) {
  		}
  	});
 
+ 	robot.respond(/time/,i function(res) {
+ 		var d = new Date(year, month, day, hours, minutes, seconds, milliseconds);
+ 		res.reply('the date is' + d);
+
+
+ 	});
+
  	robot.respond(/.*year.*/i, function(res) {
  		var d = new Date();
 		var year = d.getFullYear();
@@ -60,10 +67,9 @@ module.exports = function(robot) {
 				var day = d.getDay();
 				var timeOfDay = new Date(); 
 				var minute = timeOfDay.getMinutes();
- 	 		if ((day == 1)| (day == 6)) {
+ 	 		if ((day == 0)| (day == 6)) {
  	 			return res.reply ('Today is the weekend...go home, nerd.');
- 	 		} else {
- 	 			return res.reply ('today is ' + day);
+ 	 		} else (if) {
  	 		}
  	 	});
  	 // tell me our class syllabus
