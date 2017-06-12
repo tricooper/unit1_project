@@ -69,9 +69,9 @@ module.exports = function(robot) {
 				var hour = d.getHours();
 				var hoursLeft = 17 - hour; 
  	 		if ((day == 0)| (day == 6)) {
- 	 			return res.reply ('Today is the weekend...go home, nerd.');
+ 	 			return res.reply ('Its the weekend...go home, nerd.');
  	 		} else if (8 < hour < 17) {
- 	 			return res.reply ('You can go home in' + hoursLeft + 'hours' );
+ 	 			return res.reply ('You can go home in ' + hoursLeft + ' ' + hour );
  	 		} else if (hour < 8) {
  	 			return res.reply ("Dude, you're not even at work yet");
  	 		}
