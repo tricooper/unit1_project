@@ -79,7 +79,7 @@ module.exports = function(robot) {
  	 		if ((day == 0)| (day == 6)) {
  	 			return res.reply ('Its the weekend...go home, nerd.');
  	 		} else if ((hour < 17) & (hour > 8)) {
- 	 			return res.reply ('You can go home in ' + hoursLeft + ' hours and' + minutesLeft + 'minutes');
+ 	 			return res.reply ('You can go home in ' + hoursLeft + ' hours and' + minutesLeft + ' minutes');
  	 		} else if (hour < 8) {
  	 			return res.reply ("Dude, you're not even at work yet");
  	 		}
@@ -87,8 +87,21 @@ module.exports = function(robot) {
 
 
  	 // tell me our class syllabus
+
+ 	 robot.respond(/.*syllabus.*/i, function(res) {
+ 	 		var syllabus = {
+
+ 	 		}
+
+ 	 });
+ 	 // what are we doing in class today?
  	 // use settimeout to delay the response
  	 // what is our zoom link?
+ 	 robot.respond(/.*zoom link.*/.i, function(res){
+ 	 	var zoom = https://generalassembly.zoom.us/j/708480118;
+ 	 	return res.reply (zoom);
+
+ 	 });
  	 // define x. (defines a certain piece of javascript)
  	  	
  	 //  	robot.respond(/tell me/i, function(res){
