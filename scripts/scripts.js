@@ -84,7 +84,11 @@ module.exports = function(robot) {
  	 			return res.reply ("Dude, you're not even at work yet");
  	 		}
  	 	});
+ 	 	
+ 	 robot.respond(/.*zoom link.*/.i, function(res){
+ 	 	return res.reply ('https://generalassembly.zoom.us/j/708480118');
 
+ 	 });
 
  	 // tell me our class syllabus
 
@@ -97,10 +101,7 @@ module.exports = function(robot) {
  	 // what are we doing in class today?
  	 // use settimeout to delay the response
  	 // what is our zoom link?
- 	 robot.respond(/.*zoom link.*/.i, function(res){
- 	 	return res.reply ('https://generalassembly.zoom.us/j/708480118');
 
- 	 });
  	 // define x. (defines a certain piece of javascript)
  	  	
  	 //  	robot.respond(/tell me/i, function(res){
