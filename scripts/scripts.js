@@ -18,9 +18,9 @@ module.exports = function(robot) {
  	});
 
  	robot.respond(/time/,i function(res) {
- 		var d = new Date(year, month, day, hours, minutes, seconds, milliseconds);
+ 		var d = new Date(); 
+ 		var currentTime = d.getHours();
  		res.reply('the date is' + d);
-
 
  	});
 
