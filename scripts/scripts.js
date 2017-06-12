@@ -98,8 +98,7 @@ module.exports = function(robot) {
  	 // use settimeout to delay the response
  	 // what is our zoom link?
  	 robot.respond(/.*zoom link.*/.i, function(res){
- 	 	var zoom = 'https://generalassembly.zoom.us/j/708480118';
- 	 	return res.reply (zoom);
+ 	 	return res.reply ('https://generalassembly.zoom.us/j/708480118');
 
  	 });
  	 // define x. (defines a certain piece of javascript)
