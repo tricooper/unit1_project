@@ -84,11 +84,11 @@ module.exports = function(robot) {
  	 			return res.reply ("Dude, you're not even at work yet");
  	 		}
  	 	});
- 	 	
- 	 // robot.respond(/.*zoom link.*/.i, function(res){
- 	 // 	return res.reply ('https://generalassembly.zoom.us/j/708480118');
 
- 	 // });
+ 	 robot.respond(/.*zoom link.*/i, function(res){
+ 	 	return res.reply ('https://generalassembly.zoom.us/j/708480118');
+
+ 	 });
 
  	 // tell me our class syllabus
 
