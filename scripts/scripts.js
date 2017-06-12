@@ -60,8 +60,10 @@ module.exports = function(robot) {
 				var day = d.getDay();
 				var timeOfDay = new Date(); 
 				var minute = timeOfDay.getMinutes();
- 	 		if ((day === 6)| (day === 0) ){
- 	 			return res.reply ('Today is the Weekend...go home, nerd.');
+ 	 		if ((day == 6)|(day == 0) ){
+ 	 			return res.reply ('Today is the weekend...go home, nerd.');
+ 	 		} else {
+ 	 			return res.reply ('Today is the weekend...go home, nerd.');
  	 		}
  	 	});
  	 // tell me our class syllabus
