@@ -69,8 +69,7 @@ module.exports = function(robot) {
 				var minute = timeOfDay.getMinutes();
  	 		if ((day == 0)| (day == 6)) {
  	 			return res.reply ('Today is the weekend...go home, nerd.');
- 	 		} else (if) {
- 	 		}
+ 	 		} 
  	 	});
  	 // tell me our class syllabus
  	 // what is our zoom link?
