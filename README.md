@@ -24,3 +24,4 @@ Roadblocks:
 - Was not able to message another room. However many variations of the messageRoom function I used, I couldn't get it to work.
 - I figured out how to test a RegEx by creating a constructor in my NBA Championship function, however, I'm not sure how to further edit the expression. At the moment, I have 'var championTest = new RegExp(champion, 'i');', where the regular expression is the varible 'Champion', but I'd like to have the RegEx be the String in champion but also have (.*) around the expression so users can put in any string. 
 - I wanted to create a ToDo list, but couldn't figure it out. The logic was to create an empty array and everytime I told hal to 'add x to Todo' this would be pushed to the empty array. I then wanted to loop through the array and on a certain command (like 'what's my ToDo list?') Hal would print out the list. 
+- I couldn't get the time zone to work. I'm not sure how to offset it from UTC to UTC -5
