@@ -65,11 +65,16 @@ module.exports = function(robot) {
  	 	robot.respond(/.*can I go home.*/i, function(res) {
 		 		var d = new Date();
 				var day = d.getDay();
-				var timeOfDay = new Date(); 
-				var minute = timeOfDay.getMinutes();
+				var minute = d.getMinutes();
+				var hour = d.getHours();
+				var hoursLeft = 17 - hour; 
  	 		if ((day == 0)| (day == 6)) {
  	 			return res.reply ('Today is the weekend...go home, nerd.');
- 	 		} 
+ 	 		} else if (8 < hour < 17) {
+ 	 			return res.reply ('You can go home in' + hoursLeft + 'hours' );
+ 	 		} else if (hour < 8) {
+ 	 			return res.reply ("Dude, you're not even at work yet");
+ 	 		}
  	 	});
  	 // tell me our class syllabus
  	 // what is our zoom link?
