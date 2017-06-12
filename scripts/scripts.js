@@ -14,7 +14,7 @@ module.exports = function(robot) {
 		return res.send("I'm a robot -- I don't eat food!");
 	});   
 
- 	robot.respond(/Hi Hubot! My name is (.*)/i, function(msg){
+ 	robot.respond(/.*My name is .* (.*)/i, function(msg){
  		var name;
  		name = msg.match[1];
  		if (name == 'Hubot') {
@@ -173,6 +173,7 @@ module.exports = function(robot) {
 		1948: 'Baltimore Bullets',
 		1947: 'Philadelphia Warriors'
 		};
+
  var champion = res.match[1];
  var championTest = new RegExp(champion, 'i');
  var text = 'The ' + champion + ' won the championship in: ';
