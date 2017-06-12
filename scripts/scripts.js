@@ -67,7 +67,7 @@ module.exports = function(robot) {
 
  	});
 
- 	 // How Many weeks until blank (Hubot tells you)
+ 	 // Hubot will tell you how long you have left in your day
 
  	 	robot.respond(/.*can I go home.*/i, function(res) {
 		 		var d = new Date();
@@ -78,7 +78,7 @@ module.exports = function(robot) {
  	 		if ((day == 0)| (day == 6)) {
  	 			return res.reply ('Its the weekend...go home, nerd.');
  	 		} else if ((hour < 17) & (hour > 8)) {
- 	 			return res.reply ('You can go home in ' + hoursLeft + ' ' + hour );
+ 	 			return res.reply ('You can go home in ' + hoursLeft + 'hours');
  	 		} else if (hour < 8) {
  	 			return res.reply ("Dude, you're not even at work yet");
  	 		}
